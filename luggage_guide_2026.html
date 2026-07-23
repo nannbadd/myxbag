@@ -1,0 +1,501 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Как выбрать чемодан для ручной клади: гайд 2026 — Блог MY x BAG</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --bg-main: #fcfbfa;
+            --bg-card: #f4efe6;
+            --bg-accent: #e8dfd1;
+            --bg-dark: #2c2926;
+            --text-main: #332f2c;
+            --text-muted: #736b65;
+            --border-color: #e3dad0;
+            --accent-color: #9c846e;
+            --accent-hover: #826c57;
+            --tag-bg: #efe8dc;
+        }
+
+        *, *::before, *::after {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            background-color: var(--bg-main);
+            color: var(--text-main);
+            line-height: 1.7;
+            font-size: 16px;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        header {
+            background-color: var(--bg-main);
+            border-bottom: 1px solid var(--border-color);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            backdrop-filter: blur(8px);
+            background-color: rgba(252, 251, 250, 0.9);
+        }
+
+        .header-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px 24px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-family: 'Playfair Display', serif;
+            font-size: 24px;
+            font-weight: 700;
+            letter-spacing: 0.05em;
+            color: var(--text-main);
+            text-decoration: none;
+        }
+
+        .logo span {
+            color: var(--accent-color);
+            font-weight: 400;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 32px;
+            list-style: none;
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            color: var(--text-main);
+            font-weight: 500;
+            font-size: 14px;
+            letter-spacing: 0.02em;
+            transition: color 0.2s ease;
+        }
+
+        .nav-links a:hover {
+            color: var(--accent-color);
+        }
+
+        .main-layout {
+            max-width: 1200px;
+            margin: 40px auto;
+            padding: 0 24px;
+            display: grid;
+            grid-template-columns: 1fr 340px;
+            gap: 48px;
+        }
+
+        @media (max-width: 900px) {
+            .main-layout {
+                grid-template-columns: 1fr;
+            }
+            .sidebar {
+                display: none;
+            }
+        }
+
+        .article-container {
+            background: #ffffff;
+            border: 1px solid var(--border-color);
+            border-radius: 16px;
+            padding: 48px;
+            box-shadow: 0 4px 24px rgba(51, 47, 44, 0.03);
+        }
+
+        @media (max-width: 600px) {
+            .article-container {
+                padding: 24px;
+            }
+        }
+
+        .article-meta-top {
+            display: flex;
+            align-items: center;
+            gap: 16px;
+            margin-bottom: 20px;
+            flex-wrap: wrap;
+        }
+
+        .badge {
+            background-color: var(--tag-bg);
+            color: var(--accent-color);
+            padding: 6px 14px;
+            border-radius: 50px;
+            font-size: 13px;
+            font-weight: 600;
+            letter-spacing: 0.03em;
+            text-transform: uppercase;
+        }
+
+        .read-time {
+            color: var(--text-muted);
+            font-size: 14px;
+        }
+
+        h1 {
+            font-family: 'Playfair Display', serif;
+            font-size: clamp(32px, 4vw, 44px);
+            line-height: 1.2;
+            font-weight: 700;
+            color: var(--text-main);
+            margin-bottom: 24px;
+        }
+
+        .lead {
+            font-size: 18px;
+            line-height: 1.7;
+            color: var(--text-main);
+            margin-bottom: 36px;
+            font-weight: 400;
+        }
+
+        .cover-stub {
+            width: 100%;
+            height: 380px;
+            background: linear-gradient(135deg, var(--bg-card) 0%, var(--bg-accent) 100%);
+            border-radius: 12px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 40px;
+            color: var(--accent-color);
+            border: 1px solid var(--border-color);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .cover-stub::after {
+            content: '';
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background: radial-gradient(circle, rgba(255,255,255,0.4) 0%, rgba(255,255,255,0) 70%);
+        }
+
+        .cover-icon {
+            font-size: 48px;
+            margin-bottom: 12px;
+            z-index: 1;
+        }
+
+        .cover-title {
+            font-family: 'Playfair Display', serif;
+            font-size: 20px;
+            font-weight: 600;
+            letter-spacing: 0.05em;
+            z-index: 1;
+            color: var(--text-main);
+        }
+
+        h2 {
+            font-family: 'Playfair Display', serif;
+            font-size: 26px;
+            font-weight: 600;
+            color: var(--text-main);
+            margin-top: 40px;
+            margin-bottom: 16px;
+            border-left: 4px solid var(--accent-color);
+            padding-left: 12px;
+        }
+
+        p {
+            margin-bottom: 20px;
+            color: var(--text-main);
+        }
+
+        ul {
+            list-style: none;
+            margin-bottom: 24px;
+            padding-left: 0;
+        }
+
+        ul li {
+            position: relative;
+            padding-left: 24px;
+            margin-bottom: 12px;
+            color: var(--text-main);
+        }
+
+        ul li::before {
+            content: "—";
+            position: absolute;
+            left: 0;
+            color: var(--accent-color);
+            font-weight: bold;
+        }
+
+        .checklist-box {
+            background-color: var(--bg-card);
+            border-radius: 12px;
+            padding: 32px;
+            margin: 36px 0;
+            border: 1px solid var(--border-color);
+        }
+
+        .checklist-box h3 {
+            font-family: 'Playfair Display', serif;
+            font-size: 20px;
+            margin-bottom: 16px;
+            color: var(--text-main);
+        }
+
+        .checklist-box ul li::before {
+            content: "✓";
+            color: var(--accent-color);
+            font-weight: bold;
+        }
+
+        .promo-banner {
+            background: var(--bg-dark);
+            color: #ffffff;
+            border-radius: 12px;
+            padding: 36px;
+            margin-top: 48px;
+            text-align: center;
+        }
+
+        .promo-banner h3 {
+            font-family: 'Playfair Display', serif;
+            font-size: 24px;
+            margin-bottom: 12px;
+            color: #ffffff;
+        }
+
+        .promo-banner p {
+            color: #d6cfcb;
+            margin-bottom: 24px;
+            font-size: 15px;
+        }
+
+        .btn {
+            display: inline-block;
+            background-color: var(--accent-color);
+            color: #ffffff;
+            padding: 14px 28px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 14px;
+            letter-spacing: 0.03em;
+            transition: background-color 0.2s ease;
+        }
+
+        .btn:hover {
+            background-color: var(--accent-hover);
+        }
+
+        .sidebar {
+            display: flex;
+            flex-direction: column;
+            gap: 24px;
+        }
+
+        .card {
+            background: #ffffff;
+            border: 1px solid var(--border-color);
+            border-radius: 16px;
+            padding: 24px;
+            box-shadow: 0 4px 24px rgba(51, 47, 44, 0.03);
+        }
+
+        .card h4 {
+            font-family: 'Playfair Display', serif;
+            font-size: 18px;
+            margin-bottom: 16px;
+            color: var(--text-main);
+            border-bottom: 1px solid var(--border-color);
+            padding-bottom: 8px;
+        }
+
+        .related-item {
+            display: flex;
+            gap: 12px;
+            margin-bottom: 16px;
+            text-decoration: none;
+            color: inherit;
+            transition: opacity 0.2s;
+        }
+
+        .related-item:hover {
+            opacity: 0.7;
+        }
+
+        .related-thumb {
+            width: 60px;
+            height: 60px;
+            background: var(--bg-card);
+            border-radius: 8px;
+            flex-shrink: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 20px;
+        }
+
+        .related-info h5 {
+            font-size: 14px;
+            font-weight: 600;
+            line-height: 1.4;
+            margin-bottom: 4px;
+        }
+
+        .related-info span {
+            font-size: 12px;
+            color: var(--text-muted);
+        }
+
+        footer {
+            border-top: 1px solid var(--border-color);
+            background-color: var(--bg-card);
+            margin-top: 80px;
+            padding: 48px 24px;
+            text-align: center;
+            color: var(--text-muted);
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="header-container">
+            <a href="#" class="logo">MY x <span>BAG</span></a>
+            <ul class="nav-links">
+                <li><a href="#">Каталог</a></li>
+                <li><a href="#">Коллекции</a></li>
+                <li><a href="#">Блог</a></li>
+                <li><a href="#">О бренде</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <div class="main-layout">
+        <main>
+            <article class="article-container">
+                <div class="article-meta-top">
+                    <span class="badge">Гайды и советы</span>
+                    <span class="read-time">Время чтения: 5 минут</span>
+                </div>
+
+                <h1>Как выбрать чемодан для ручной клади: гайд 2026</h1>
+
+                <p class="lead">Собрать всё необходимое для поездки в один компактный чемодан — настоящее искусство. Хороший чемодан для ручной клади должен быть лёгким, прочным, вместительным и при этом красиво выглядеть — соответствовать требованиям авиакомпаний и вашему стилю. В этом гайде разберём, на что обратить внимание при выборе в 2026 году, чтобы чемодан прослужил не один сезон и радовал в каждом путешествии.</p>
+
+                <div class="cover-stub">
+                    <div class="cover-icon">🧳</div>
+                    <div class="cover-title">MY x BAG — Travel Guide 2026</div>
+                </div>
+
+                <h2>Какой размер ручной клади считается оптимальным</h2>
+                <p>Единого мирового стандарта не существует: требования зависят от авиакомпании. Однако одним из самых распространённых форматов считается размер ручной клади около 55 × 40 × 20–23 см. Именно поэтому покупатели часто ориентируются на категорию «чемодан 55 см» — такие модели подходят для большинства российских и европейских перевозчиков.</p>
+                <p>Перед покупкой обязательно проверьте допустимые габариты на сайте вашего перевозчика — требования различаются даже у крупных авиакомпаний, а у лоукостеров бывают особенно строгими. Иногда даже несколько лишних сантиметров могут привести к необходимости сдавать багаж.</p>
+
+                <h2>Из чего сделан надёжный чемодан: материал корпуса</h2>
+                <p>Материал напрямую влияет на срок службы чемодана и его внешний вид после перелётов — а значит, и на то, насколько презентабельно он будет выглядеть спустя десяток поездок.</p>
+                
+                <ul>
+                    <li><strong>Поликарбонат (PC)</strong> — прочный, лёгкий и упругий материал премиум-класса. Хорошо переносит удары, сохраняет форму и матовую фактуру корпуса.</li>
+                    <li><strong>ABS-пластик</strong> — более доступный по цене, но менее устойчив к повреждениям и царапинам.</li>
+                    <li><strong>Комбинированные материалы (ABS + PC)</strong> — компромисс между стоимостью и прочностью.</li>
+                    <li><strong>Текстиль</strong> — легче деформируется и хуже защищает содержимое от влаги и механических повреждений.</li>
+                </ul>
+
+                <p>Если путешествия — регулярная часть вашей жизни, поликарбонат станет наиболее практичным выбором: долговечен и дольше сохраняет опрятный вид.</p>
+
+                <h2>На какие детали обратить внимание</h2>
+                <p>Именно детали определяют, насколько комфортно пользоваться чемоданом в поездке — и насколько стильно он смотрится рядом с вами.</p>
+
+                <ul>
+                    <li><strong>Колёса.</strong> Лучше выбирать четыре сдвоенных колеса с вращением на 360° — они обеспечивают плавный ход и снижают нагрузку на руку.</li>
+                    <li><strong>Телескопическая ручка.</strong> Она должна надёжно фиксироваться в нескольких положениях и не люфтить.</li>
+                    <li><strong>Вес.</strong> Чем легче пустой чемодан, тем больше вещей можно взять с собой без превышения лимита по весу.</li>
+                    <li><strong>Внутреннее пространство.</strong> Разделители, фиксирующие ремни и карманы помогают поддерживать порядок и быстро находить нужные вещи в поездке.</li>
+                    <li><strong>Дизайн и цвет.</strong> Лаконичные формы и приглушённая палитра не выходят из моды и одинаково уместны в деловой поездке и на отдыхе.</li>
+                </ul>
+
+                <h2>Замок и безопасность</h2>
+                <p>Для международных путешествий удобным решением станет встроенный кодовый TSA-замок. Во время досмотра сотрудники аэропорта могут открыть его специальным ключом, не повреждая корпус чемодана. Это особенно актуально при перелётах в США, Канаду и некоторые другие страны.</p>
+
+                <div class="checklist-box">
+                    <h3>Чек-лист: критерии выбора чемодана для ручной клади</h3>
+                    <p>Перед покупкой обратите внимание на несколько важных критериев:</p>
+                    <ul>
+                        <li>размеры, соответствующие требованиям авиакомпаний (чаще всего — чемодан 55 см);</li>
+                        <li>прочный материал корпуса, желательно поликарбонат;</li>
+                        <li>небольшой собственный вес;</li>
+                        <li>четыре сдвоенных колеса с поворотом на 360°;</li>
+                        <li>встроенный TSA-замок;</li>
+                        <li>качественную молнию и надёжную фурнитуру;</li>
+                        <li>удобную внутреннюю организацию;</li>
+                        <li>лаконичный дизайн, который не потеряет вид после множества поездок.</li>
+                    </ul>
+                </div>
+
+                <h2>Чемодан, который будет радовать не одну поездку</h2>
+                <p>Хороший чемодан для ручной клади — это не только требования авиакомпаний. Он делает путешествия комфортнее и остаётся эстетичным и удобным из года в год.</p>
+                <p>В MY x BAG мы создаём чемоданы из поликарбоната, в которых сочетаются продуманная эргономика, надёжная фурнитура и лаконичный премиальный дизайн. Если вы выбираете модель для командировок, коротких путешествий или уикендов, у нас в каталоге легко найти чемодан, который будет соответствовать вашему стилю поездок и прослужит долгие годы.</p>
+
+                <div class="promo-banner">
+                    <h3>Найдите свой идеальный чемодан</h3>
+                    <p>Премиальный поликарбонат, идеальные размеры для ручной клади и безупречный стиль от MY x BAG.</p>
+                    <a href="#" class="btn">Перейти в каталог</a>
+                </div>
+            </article>
+        </main>
+
+        <aside class="sidebar">
+            <div class="card">
+                <h4>Популярные статьи</h4>
+                
+                <a href="#" class="related-item">
+                    <div class="related-thumb">🎒</div>
+                    <div class="related-info">
+                        <h5>Что положить в ручную кладь: чек-лист сборов</h5>
+                        <span>4 мин чтения</span>
+                    </div>
+                </a>
+
+                <a href="#" class="related-item">
+                    <div class="related-thumb">✨</div>
+                    <div class="related-info">
+                        <h5>Как ухаживать за чемоданом из поликарбоната</h5>
+                        <span>3 мин чтения</span>
+                    </div>
+                </a>
+
+                <a href="#" class="related-item">
+                    <div class="related-thumb">✈️</div>
+                    <div class="related-info">
+                        <h5>Правила авиакомпаний 2026: габариты багажа</h5>
+                        <span>6 мин чтения</span>
+                    </div>
+                </a>
+            </div>
+
+            <div class="card" style="background-color: var(--bg-card); text-align: center;">
+                <h4 style="border: none; margin-bottom: 8px;">MY x BAG Club</h4>
+                <p style="font-size: 14px; color: var(--text-muted); margin-bottom: 16px;">Получайте приватные скидки и гайды по путешествиям.</p>
+                <a href="#" class="btn" style="width: 100%; text-align: center; box-sizing: border-box;">Подписаться</a>
+            </div>
+        </aside>
+    </div>
+
+    <footer>
+        <p>&copy; 2026 MY x BAG. Все права защищены. Премиальные чемоданы и аксессуары для путешествий.</p>
+    </footer>
+
+</body>
+</html>
